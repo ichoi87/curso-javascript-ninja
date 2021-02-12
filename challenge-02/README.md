@@ -85,7 +85,7 @@ function retorna(a, b, c) {
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
 retorna(1); // 1
 retorna(1, 2); // 3
-retorna(1, 2, 3); // 0
+retorna(1, 2, 3); // 1
 retorna(); // false
 retorna(1, 2, 3, 4); // null
 ```
