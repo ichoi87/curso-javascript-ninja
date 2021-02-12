@@ -69,14 +69,14 @@ Crie uma função com as seguintes características:
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
 function retorna(a, b, c) {
-  if(a) {
+  if(a %% !b && !c) {
     return a;
-  }if(a && b) {
+  }if(a && b && !c) {
     return a + b;
   }if(a && b && c) {
     return (a + b) / c;
   }if(!a && !b && !c) {
-    return fasle;
+    return false;
   }else {
     return null;
   };
