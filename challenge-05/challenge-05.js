@@ -12,7 +12,7 @@ function getArrray(arr) { return arr; };
 /*
 Imprima o segundo índice do array retornado pela função criada acima.
 */
-getArray()[2];
+console.log(getArray()[2]);
 
 /*
 Crie uma função que receba dois parâmetros: o primeiro, um array de valores; e o
@@ -69,12 +69,8 @@ function getBook(name) {
       'editora': 'editora3'
     },
   }
-  if(!name) {
-    return books;
-  }else {
-    return books.name; 
-  }
-}
+  return !name ? books : books[name];
+};
 
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
