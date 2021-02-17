@@ -56,7 +56,7 @@ vai efetuar. Será uma string com os valores `+`, `-`, `*`, `/` ou `%`;
   "Operação inválida."
 */
 function calculator(operator) {
-  function result(n1, n2) {
+  return function result(n1, n2) {
     var result = '';
     switch(operator) {
       case '+':
