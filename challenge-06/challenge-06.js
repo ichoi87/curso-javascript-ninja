@@ -70,56 +70,37 @@ Crie uma função chamada `convertToHex`, com as seguintes características:
     "Não temos o equivalente hexadecimal para [COR]."
 */
 function convertToHex(color) {
-  var red = 'FF3333';
-  var blue = 'FF3333';
-  var black = 'FF3333';
-  var yellow = 'FF3333';
-  var pink = 'FF3333';
-  
+  var hexa = '';
   switch(color) {
     case 'red':
-      console.log(`O hexadecimal para a cor ${color} é ${red}.`);
+      hexa = 'FF3333';
       break;
     case 'blue':
-      console.log(`O hexadecimal para a cor ${color} é ${blue}.`);
+      hexa = '0080F8';
       break;
     case 'black':
-      console.log(`O hexadecimal para a cor ${color} é ${black}.`);
+      hexa = '000000';
       break;
     case 'yellow':
-      break;
-      console.log(`O hexadecimal para a cor ${color} é ${yellow}.`);
+      hexa = 'F8E100';
       break;
     case 'pink':
-      console.log(`O hexadecimal para a cor ${color} é ${pink}.`);
+      hexa = 'FF11D7';
+      break;
+    default:
+      return 'Não temos o equivalente hexadecimal para ${color}.'
   };
+  return console.log(`O hexadecimal para a cor ${color} é ${hexa}.`);
 };
 
 /*
 Tente mostrar o hexadecimal de 8 cores diferentes usando a função criada acima.
 */
-function convertToHex(color) {
-  var red = 'FF3333';
-  var blue = 'FF3333';
-  var black = 'FF3333';
-  var yellow = 'FF3333';
-  var pink = 'FF3333';
-  
-  switch(color) {
-    case 'red':
-      console.log(`O hexadecimal para a cor ${color} é ${red}.`);
-      break;
-    case 'blue':
-      console.log(`O hexadecimal para a cor ${color} é ${blue}.`);
-      break;
-    case 'black':
-      console.log(`O hexadecimal para a cor ${color} é ${black}.`);
-      break;
-    case 'yellow':
-      break;
-      console.log(`O hexadecimal para a cor ${color} é ${yellow}.`);
-      break;
-    case 'pink':
-      console.log(`O hexadecimal para a cor ${color} é ${pink}.`);
-  };
-};
+console.log(convertToHex('red'));
+console.log(convertToHex('blue'));
+console.log(convertToHex('green'));
+console.log(convertToHex('white'));
+console.log(convertToHex('black'));
+console.log(convertToHex('yellow'));
+console.log(convertToHex('pink'));
+console.log(convertToHex('orange'));
