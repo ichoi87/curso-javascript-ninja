@@ -57,7 +57,8 @@ vai efetuar. Será uma string com os valores `+`, `-`, `*`, `/` ou `%`;
 */
 function calculator(operator) {
   function(n1, n2) {
-    console.log(`Resultado da operação: ${n1} [OPERADOR] [NUMERO2] = [RESULTADO].`)
+    result = 
+    console.log(`Resultado da operação: ${n1} ${operator} ${n2} = ${result}.`)
 
 /*
 Declare uma variável chamada `sum`, que receberá a função acima, passando como
