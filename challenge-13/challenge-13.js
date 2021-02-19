@@ -154,17 +154,19 @@
   Mostre no console o array criado acima:
   */
   console.log( '\nnewBrasil agora com mais informações:' );
-  // ?
+  console.log(map);
 
   /*
   Filtre o array criado acima, retornando somente os estados que tiverem
   ID par. Atribua o valor à uma variável chamada `filter`.
   */
-  // ?
+  var filter = map.filter((i, ind) => {
+    return i.id % 2 === 0 ;
+  })
 
   /*
   Mostre o array filtrado acima no console.
   */
   console.log( '\nEstados com ID par:' );
-  // ?
+  console.log(filter);
 })();
