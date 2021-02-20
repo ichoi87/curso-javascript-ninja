@@ -14,7 +14,11 @@ Ex: no caso do nome ser "Fernando", deve mostrar as frases:
 E assim por diante, até a última.
 */
 console.log( 'As letras do seu nome:' );
-// ?
+var name = 'Felipe';
+for(var i = 0; name.length > i; i++) {
+  console.log(`${name[i]} é a ${i}ª letra do meu nome.`);
+};
+
 
 /*
 - Declare uma variável chamada `fullName`, que receba seu nome completo,
@@ -29,7 +33,9 @@ curso para fazer isso funcionar corretamente :)
 console.log para cada formato.
 */
 console.log( '\nNome convertido à partir de um slug:' );
-// ?
+var fullName = 'felipe-choi';
+console.log(fullName);
+console.log(fullName.split('-').map((i) => i.charAt(0).toUpperCase() + i.slice(1)));
 
 /*
 - Crie um array com 5 nomes. Reduza esses nomes a uma única string, separando
@@ -41,21 +47,27 @@ O resultado final deve ficar mais ou menos assim:
 5 nomes foi somente uma sugestão ;)
 */
 console.log( '\nMeus amigos:' );
-// ?
+var names = ['name1', 'name2', 'name3', 'name4', 'name5'];
+names.reduce((acc, cur, ind) => {
+  var separator = names.length - 1 === ind ? ', ' : ' e ';
+  return acc + separator + cur;
+});
 
 /*
 Usando o replace(), faça a string "Roberto" virar "Roberta".
 Mostre o resultado no console.
 */
 console.log( '\nEra "Roberto", agora é:' );
-// ?
+var roberto = 'Roberto';
+console.log(roberto.replace('o', 'a'));
 
 /*
 Mostre no console a parte "nando" da string "Fernando". Use o método que
 faz a busca do final para o início da string.
 */
 console.log( '\nParte de uma string:' );
-// ?
+var fernando = 'Fernando';
+fernando.substring(8, 3);
 
 /*
 Declare uma variável chamada `myName`, que receba o seu primeiro nome,
@@ -67,4 +79,9 @@ de qualquer tamanho, escrito de qualquer forma.
 Ex.: Nomes que deveriam funcionar: "Fernando", "RoBertO", "gabriEla", etc.
 */
 console.log( '\nNome com letras intercaladas entre caixa alta e baixa:' );
-// ?
+var myName = 'Felipe';
+var newName = [];
+for(var i = 0; myName.length > i; i++) {
+  newName.push(i % 2 === 0 ? myName.charAt(i).toUpperCase() : myName.charAt(i).toLowerCase());
+};
+console.log(newName.reduce((acc, cur) => acc + cur));
